@@ -89,6 +89,9 @@
     <Compile Include="QuadratischeFunktionForm.Designer.cs">
       <DependentUpon>QuadratischeFunktionForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GanzrationaleFunktionForm.resx">
+      <DependentUpon>GanzrationaleFunktionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LinearFunktionForm.resx">
       <DependentUpon>LinearFunktionForm.cs</DependentUpon>
     </EmbeddedResource>
