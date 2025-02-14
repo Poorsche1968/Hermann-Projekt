@@ -69,7 +69,7 @@
             // 
             // buttonZeichnen
             // 
-            this.buttonZeichnen.Location = new System.Drawing.Point(29, 142);
+            this.buttonZeichnen.Location = new System.Drawing.Point(29, 145);
             this.buttonZeichnen.Name = "buttonZeichnen";
             this.buttonZeichnen.Size = new System.Drawing.Size(75, 23);
             this.buttonZeichnen.TabIndex = 4;
