@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FunktionZeichnen
@@ -19,7 +12,9 @@ namespace FunktionZeichnen
         private void lineareFktToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new LinearFunktionForm();
+            WindowState = FormWindowState.Maximized;
             form.Show();
+            
         }
 
         private void qudratischeFktToolStripMenuItem_Click(object sender, EventArgs e)
