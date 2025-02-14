@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace FunktionZeichnen
 {
@@ -12,27 +13,34 @@ namespace FunktionZeichnen
         private void lineareFktToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new LinearFunktionForm();
-            WindowState = FormWindowState.Maximized;
             form.Show();
-            
+            form.WindowState = FormWindowState.Maximized;
+            form.MdiParent = this;
+
         }
 
         private void qudratischeFktToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new QuadratischeFunktionForm();
             form.Show();
+            form.WindowState = FormWindowState.Maximized;
+            form.MdiParent = this;
         }
 
         private void exponentialeFktToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new ExponentialFunktionForm();
             form.Show();
+            form.WindowState = FormWindowState.Maximized;
+            form.MdiParent = this;
         }
 
         private void ganzrationaleFktToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new GanzrationaleFunktionForm();
             form.Show();
+            form.WindowState = FormWindowState.Maximized;
+            form.MdiParent = this;
         }
 
         private void beendenToolStripMenuItem_Click(object sender, EventArgs e)
