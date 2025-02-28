@@ -32,6 +32,7 @@
             this.textBoxBasis = new System.Windows.Forms.TextBox();
             this.buttonZeichne = new System.Windows.Forms.Button();
             this.buttonBeenden = new System.Windows.Forms.Button();
+            this.buttonHilfe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelBasis
@@ -47,7 +48,7 @@
             // textBoxBasis
             // 
             this.textBoxBasis.Location = new System.Drawing.Point(148, 21);
-            this.textBoxBasis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxBasis.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxBasis.Name = "textBoxBasis";
             this.textBoxBasis.Size = new System.Drawing.Size(122, 20);
             this.textBoxBasis.TabIndex = 2;
@@ -55,7 +56,7 @@
             // buttonZeichne
             // 
             this.buttonZeichne.Location = new System.Drawing.Point(10, 58);
-            this.buttonZeichne.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonZeichne.Margin = new System.Windows.Forms.Padding(2);
             this.buttonZeichne.Name = "buttonZeichne";
             this.buttonZeichne.Size = new System.Drawing.Size(56, 19);
             this.buttonZeichne.TabIndex = 3;
@@ -73,16 +74,27 @@
             this.buttonBeenden.UseVisualStyleBackColor = true;
             this.buttonBeenden.Click += new System.EventHandler(this.buttonBeenden_Click);
             // 
+            // buttonHilfe
+            // 
+            this.buttonHilfe.Location = new System.Drawing.Point(486, 54);
+            this.buttonHilfe.Name = "buttonHilfe";
+            this.buttonHilfe.Size = new System.Drawing.Size(75, 23);
+            this.buttonHilfe.TabIndex = 5;
+            this.buttonHilfe.Text = "Hilfe";
+            this.buttonHilfe.UseVisualStyleBackColor = true;
+            this.buttonHilfe.Click += new System.EventHandler(this.buttonHilfe_Click);
+            // 
             // ExponentialFunktionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.buttonHilfe);
             this.Controls.Add(this.buttonBeenden);
             this.Controls.Add(this.buttonZeichne);
             this.Controls.Add(this.textBoxBasis);
             this.Controls.Add(this.labelBasis);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ExponentialFunktionForm";
             this.Text = "ExponentialFunktionForm";
             this.ResumeLayout(false);
@@ -96,5 +108,6 @@
         private System.Windows.Forms.TextBox textBoxBasis;
         private System.Windows.Forms.Button buttonZeichne;
         private System.Windows.Forms.Button buttonBeenden;
+        private System.Windows.Forms.Button buttonHilfe;
     }
 }

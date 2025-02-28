@@ -52,5 +52,10 @@ namespace FunktionZeichnen
         {
             this.Close();
         }
+
+        private void buttonHilfe_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Eine ganzrationale Funktion hat die Form f(x) = a_n*x^n + a_(n-1)*x^(n-1) + ... + a_1*x + a_0 , wobei a_n, a_(n-1), ..., a_1, a_0 Konstanten sind; Sie beschreibt eine Kurve, die durch Polynome höheren Grades dargestellt wird.");
+        }
     }
 }

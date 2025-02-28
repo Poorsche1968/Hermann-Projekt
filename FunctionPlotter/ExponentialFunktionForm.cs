@@ -40,6 +40,11 @@ namespace FunktionZeichnen
         {
             this.Close();
         }
+
+        private void buttonHilfe_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Eine Exponentialfunktion hat die Form f(x) = a^x , wobei a eine positive Konstante ist; Sie beschreibt eine Kurve, die exponentiell wächst oder fällt.");
+        }
     }
 }
 

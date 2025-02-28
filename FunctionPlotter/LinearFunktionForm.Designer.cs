@@ -34,6 +34,7 @@
             this.textBoxAbfangen = new System.Windows.Forms.TextBox();
             this.buttonZeichnen = new System.Windows.Forms.Button();
             this.buttonBeenden = new System.Windows.Forms.Button();
+            this.buttonHilfe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelNeigung
@@ -59,7 +60,7 @@
             // textBoxNeigung
             // 
             this.textBoxNeigung.Location = new System.Drawing.Point(104, 20);
-            this.textBoxNeigung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNeigung.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNeigung.Name = "textBoxNeigung";
             this.textBoxNeigung.Size = new System.Drawing.Size(76, 20);
             this.textBoxNeigung.TabIndex = 2;
@@ -67,7 +68,7 @@
             // textBoxAbfangen
             // 
             this.textBoxAbfangen.Location = new System.Drawing.Point(104, 80);
-            this.textBoxAbfangen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxAbfangen.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxAbfangen.Name = "textBoxAbfangen";
             this.textBoxAbfangen.Size = new System.Drawing.Size(76, 20);
             this.textBoxAbfangen.TabIndex = 3;
@@ -75,7 +76,7 @@
             // buttonZeichnen
             // 
             this.buttonZeichnen.Location = new System.Drawing.Point(22, 118);
-            this.buttonZeichnen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonZeichnen.Margin = new System.Windows.Forms.Padding(2);
             this.buttonZeichnen.Name = "buttonZeichnen";
             this.buttonZeichnen.Size = new System.Drawing.Size(56, 19);
             this.buttonZeichnen.TabIndex = 4;
@@ -93,18 +94,29 @@
             this.buttonBeenden.UseVisualStyleBackColor = true;
             this.buttonBeenden.Click += new System.EventHandler(this.buttonBeenden_Click);
             // 
+            // buttonHilfe
+            // 
+            this.buttonHilfe.Location = new System.Drawing.Point(480, 70);
+            this.buttonHilfe.Name = "buttonHilfe";
+            this.buttonHilfe.Size = new System.Drawing.Size(75, 23);
+            this.buttonHilfe.TabIndex = 6;
+            this.buttonHilfe.Text = "Hilfe";
+            this.buttonHilfe.UseVisualStyleBackColor = true;
+            this.buttonHilfe.Click += new System.EventHandler(this.buttonHilfe_Click);
+            // 
             // LinearFunktionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.buttonHilfe);
             this.Controls.Add(this.buttonBeenden);
             this.Controls.Add(this.buttonZeichnen);
             this.Controls.Add(this.textBoxAbfangen);
             this.Controls.Add(this.textBoxNeigung);
             this.Controls.Add(this.labelAbfangen);
             this.Controls.Add(this.labelNeigung);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LinearFunktionForm";
             this.Text = "LinearFunktionForm";
             this.Load += new System.EventHandler(this.LinearFunktionForm_Load);
@@ -121,5 +133,6 @@
         private System.Windows.Forms.TextBox textBoxAbfangen;
         private System.Windows.Forms.Button buttonZeichnen;
         private System.Windows.Forms.Button buttonBeenden;
+        private System.Windows.Forms.Button buttonHilfe;
     }
 }

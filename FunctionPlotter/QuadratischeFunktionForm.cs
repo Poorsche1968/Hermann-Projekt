@@ -48,5 +48,10 @@ namespace FunktionZeichnen
         {
             this.Close();
         }
+
+        private void buttonHilfe_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Eine quadratische Funktion hat die Form f(x) = a*x² + b*x + c , wobei a, b und c Konstanten sind; Sie beschreibt eine Parabel.");
+        }
     }
 } 
