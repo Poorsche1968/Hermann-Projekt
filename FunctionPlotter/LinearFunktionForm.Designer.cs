@@ -33,60 +33,78 @@
             this.textBoxNeigung = new System.Windows.Forms.TextBox();
             this.textBoxAbfangen = new System.Windows.Forms.TextBox();
             this.buttonZeichnen = new System.Windows.Forms.Button();
+            this.buttonBeenden = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelNeigung
             // 
             this.labelNeigung.AutoSize = true;
-            this.labelNeigung.Location = new System.Drawing.Point(26, 25);
+            this.labelNeigung.Location = new System.Drawing.Point(20, 20);
+            this.labelNeigung.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNeigung.Name = "labelNeigung";
-            this.labelNeigung.Size = new System.Drawing.Size(80, 16);
+            this.labelNeigung.Size = new System.Drawing.Size(64, 13);
             this.labelNeigung.TabIndex = 0;
             this.labelNeigung.Text = "Neigung (m)";
             // 
             // labelAbfangen
             // 
             this.labelAbfangen.AutoSize = true;
-            this.labelAbfangen.Location = new System.Drawing.Point(26, 99);
+            this.labelAbfangen.Location = new System.Drawing.Point(20, 80);
+            this.labelAbfangen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAbfangen.Name = "labelAbfangen";
-            this.labelAbfangen.Size = new System.Drawing.Size(84, 16);
+            this.labelAbfangen.Size = new System.Drawing.Size(68, 13);
             this.labelAbfangen.TabIndex = 1;
             this.labelAbfangen.Text = "Abfangen (b)";
             // 
             // textBoxNeigung
             // 
-            this.textBoxNeigung.Location = new System.Drawing.Point(139, 25);
+            this.textBoxNeigung.Location = new System.Drawing.Point(104, 20);
+            this.textBoxNeigung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNeigung.Name = "textBoxNeigung";
-            this.textBoxNeigung.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNeigung.Size = new System.Drawing.Size(76, 20);
             this.textBoxNeigung.TabIndex = 2;
             // 
             // textBoxAbfangen
             // 
-            this.textBoxAbfangen.Location = new System.Drawing.Point(139, 99);
+            this.textBoxAbfangen.Location = new System.Drawing.Point(104, 80);
+            this.textBoxAbfangen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxAbfangen.Name = "textBoxAbfangen";
-            this.textBoxAbfangen.Size = new System.Drawing.Size(100, 22);
+            this.textBoxAbfangen.Size = new System.Drawing.Size(76, 20);
             this.textBoxAbfangen.TabIndex = 3;
             // 
             // buttonZeichnen
             // 
-            this.buttonZeichnen.Location = new System.Drawing.Point(29, 145);
+            this.buttonZeichnen.Location = new System.Drawing.Point(22, 118);
+            this.buttonZeichnen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonZeichnen.Name = "buttonZeichnen";
-            this.buttonZeichnen.Size = new System.Drawing.Size(75, 23);
+            this.buttonZeichnen.Size = new System.Drawing.Size(56, 19);
             this.buttonZeichnen.TabIndex = 4;
             this.buttonZeichnen.Text = "Zeichnen";
             this.buttonZeichnen.UseVisualStyleBackColor = true;
             this.buttonZeichnen.Click += new System.EventHandler(this.buttonZeichnen_Click);
             // 
+            // buttonBeenden
+            // 
+            this.buttonBeenden.Location = new System.Drawing.Point(480, 17);
+            this.buttonBeenden.Name = "buttonBeenden";
+            this.buttonBeenden.Size = new System.Drawing.Size(108, 23);
+            this.buttonBeenden.TabIndex = 5;
+            this.buttonBeenden.Text = "Formular Beenden";
+            this.buttonBeenden.UseVisualStyleBackColor = true;
+            this.buttonBeenden.Click += new System.EventHandler(this.buttonBeenden_Click);
+            // 
             // LinearFunktionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.buttonBeenden);
             this.Controls.Add(this.buttonZeichnen);
             this.Controls.Add(this.textBoxAbfangen);
             this.Controls.Add(this.textBoxNeigung);
             this.Controls.Add(this.labelAbfangen);
             this.Controls.Add(this.labelNeigung);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LinearFunktionForm";
             this.Text = "LinearFunktionForm";
             this.Load += new System.EventHandler(this.LinearFunktionForm_Load);
@@ -102,5 +120,6 @@
         private System.Windows.Forms.TextBox textBoxNeigung;
         private System.Windows.Forms.TextBox textBoxAbfangen;
         private System.Windows.Forms.Button buttonZeichnen;
+        private System.Windows.Forms.Button buttonBeenden;
     }
 }

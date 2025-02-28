@@ -12,7 +12,6 @@ namespace FunktionZeichnen
             Text = "Lineare Funktion";
 
 
-
             // GraphPanel hinzufügen
             _graphPanel = new Koordinatensystem() { Top = 150, Left = 20, Width = 800, Height = 600 };
             Controls.Add(_graphPanel);
@@ -42,6 +41,11 @@ namespace FunktionZeichnen
             Controls.Add(labelAbfangen);
             Controls.Add(textBoxAbfangen);
             Controls.Add(buttonZeichnen);
+        }
+
+        private void buttonBeenden_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

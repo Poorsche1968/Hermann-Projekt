@@ -43,5 +43,10 @@ namespace FunktionZeichnen
                 MessageBox.Show("Ungültige Eingabe. Bitte geben Sie numerische Werte ein.");
             }
         }
+
+        private void buttonBeenden_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 } 

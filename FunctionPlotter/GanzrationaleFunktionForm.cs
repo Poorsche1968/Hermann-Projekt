@@ -47,5 +47,10 @@ namespace FunktionZeichnen
                 MessageBox.Show("Ungültige Eingabe. Bitte geben Sie numerische Werte ein, getrennt durch Kommas.");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
