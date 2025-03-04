@@ -37,12 +37,14 @@ namespace FunktionZeichnen
                     nachricht += $"Nullstellen: x1 = {wurzel[0]}, x2 = {wurzel[1]}";
 
                 MessageBox.Show(nachricht);
+                label1.Text = $"f(x) = {a}x² + {b}x + {c}";
             }
             else
             {
-                MessageBox.Show("Ungültige Eingabe. Bitte geben Sie numerische Werte ein.");
+                MessageBox.Show("Ungültige Eingabe. Bitte geben Sie Zahlen Werte ein.");
             }
         }
+        
 
         private void buttonBeenden_Click(object sender, EventArgs e)
         {
