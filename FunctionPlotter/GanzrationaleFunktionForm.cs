@@ -40,6 +40,7 @@ namespace FunktionZeichnen
 
                 // Nachricht mit der gezeichneten Funktion anzeigen
                 MessageBox.Show($"Funktion gezeichnet: y = {string.Join(" + ", koeffizienten.Select((c, i) => $"{c}x^{koeffizienten.Length - 1 - i}"))}");
+                label1.Text = $"Funktion: y = {string.Join(" + ", koeffizienten.Select((c, i) => $"{c}x^{koeffizienten.Length - 1 - i}"))}";
             }
             catch
             {
