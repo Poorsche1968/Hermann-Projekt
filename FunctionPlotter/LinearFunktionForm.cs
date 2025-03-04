@@ -28,19 +28,20 @@ namespace FunktionZeichnen
             {
                 var linearFunction = new LineareFunktion(neigung, abfangen);
                 _graphPanel.SetFunktion(linearFunction);
-                MessageBox.Show($"Funktion zeichnen: y = {neigung}x + {abfangen}");
+                label1.Text = $"Funktion: y = {neigung}x + {abfangen}"; // Anzeige im Label
             }
             else
             {
-                MessageBox.Show("Ungültige Eingabe. Bitte geben Sie numerische Werte ein.");
+                label1.Text = "Ungültige Eingabe. Bitte geben Sie numerische Werte ein."; // Fehler im Label anzeigen
             }
-            
+
+            /*
             // UI-Elemente hinzufügen
             Controls.Add(labelNeigung);
             Controls.Add(textBoxNeigung);
             Controls.Add(labelAbfangen);
             Controls.Add(textBoxAbfangen);
-            Controls.Add(buttonZeichnen);
+            Controls.Add(buttonZeichnen);*/
         }
 
         private void buttonBeenden_Click(object sender, EventArgs e)
@@ -52,5 +53,7 @@ namespace FunktionZeichnen
         {
             MessageBox.Show("Eine lineare Funktion hat die Form f(x) = m*x + b , wobei m die Steigung und b der y-Achsenabschnitt ist; Sie beschreibt eine gerade Linie mit konstanter Steigung.");
         }
+
+        
     }
 }
