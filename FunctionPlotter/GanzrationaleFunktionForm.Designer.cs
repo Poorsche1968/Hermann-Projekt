@@ -102,7 +102,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(235, 26);
             this.label2.TabIndex = 6;
-            this.label2.Text = "BITTE GEBEN SIE NUMMERISCH WERTE \r\nUND TRENNEN SIE MIT KOMMAS TRENNEN";
+            this.label2.Text = "BITTE GEBEN SIE ZAHLEN WERTE EIN\r\nUND TRENNEN SIE MIT KOMMAS TRENNEN";
             // 
             // GanzrationaleFunktionForm
             // 
