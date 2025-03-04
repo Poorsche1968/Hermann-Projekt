@@ -53,7 +53,5 @@ namespace FunktionZeichnen
         {
             MessageBox.Show("Eine lineare Funktion hat die Form f(x) = m*x + b , wobei m die Steigung und b der y-Achsenabschnitt ist; Sie beschreibt eine gerade Linie mit konstanter Steigung.");
         }
-
-        
     }
 }
