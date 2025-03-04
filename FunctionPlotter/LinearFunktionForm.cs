@@ -24,11 +24,11 @@ namespace FunktionZeichnen
 
         private void buttonZeichnen_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(textBoxNeigung.Text, out double neigung) && double.TryParse(textBoxAbfangen.Text, out double abfangen))
+            if (double.TryParse(textBoxNeigung.Text, out double steigung) && double.TryParse(textBoxAbfangen.Text, out double achsenabschnitt))
             {
-                var linearFunction = new LineareFunktion(neigung, abfangen);
+                var linearFunction = new LineareFunktion(steigung, achsenabschnitt);
                 _graphPanel.SetFunktion(linearFunction);
-                label1.Text = $"Funktion: y = {neigung}x + {abfangen}"; // Anzeige im Label
+                label1.Text = $"Funktion: y = {steigung}x + {achsenabschnitt}"; // Anzeige im Label
             }
             else
             {

@@ -29,6 +29,7 @@ namespace FunktionZeichnen
                 var expFunktion = new ExponentialFunktion(basisWert);
                 _koordinatensystem.SetFunktion(expFunktion);
                 MessageBox.Show($"Funktion Zeichnen: y = {basisWert}^x");
+                label1.Text = $"Funktion: y = {basisWert}^x";
             }
             else
             {

@@ -33,6 +33,7 @@
             this.buttonZeichne = new System.Windows.Forms.Button();
             this.buttonBeenden = new System.Windows.Forms.Button();
             this.buttonHilfe = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelBasis
@@ -41,16 +42,16 @@
             this.labelBasis.Location = new System.Drawing.Point(16, 21);
             this.labelBasis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelBasis.Name = "labelBasis";
-            this.labelBasis.Size = new System.Drawing.Size(91, 13);
+            this.labelBasis.Size = new System.Drawing.Size(50, 13);
             this.labelBasis.TabIndex = 1;
-            this.labelBasis.Text = "Basis Funktion (a)";
+            this.labelBasis.Text = "f(x) = a^x";
             // 
             // textBoxBasis
             // 
-            this.textBoxBasis.Location = new System.Drawing.Point(148, 21);
+            this.textBoxBasis.Location = new System.Drawing.Point(92, 21);
             this.textBoxBasis.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxBasis.Name = "textBoxBasis";
-            this.textBoxBasis.Size = new System.Drawing.Size(122, 20);
+            this.textBoxBasis.Size = new System.Drawing.Size(81, 20);
             this.textBoxBasis.TabIndex = 2;
             // 
             // buttonZeichne
@@ -84,11 +85,21 @@
             this.buttonHilfe.UseVisualStyleBackColor = true;
             this.buttonHilfe.Click += new System.EventHandler(this.buttonHilfe_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(280, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "label1";
+            // 
             // ExponentialFunktionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(622, 372);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonHilfe);
             this.Controls.Add(this.buttonBeenden);
             this.Controls.Add(this.buttonZeichne);
@@ -109,5 +120,6 @@
         private System.Windows.Forms.Button buttonZeichne;
         private System.Windows.Forms.Button buttonBeenden;
         private System.Windows.Forms.Button buttonHilfe;
+        private System.Windows.Forms.Label label1;
     }
 }
