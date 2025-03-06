@@ -9,6 +9,7 @@ namespace FunktionZeichnen
         {
             InitializeComponent();
         }
+        #region Formulare anzeigen und beenden 
         private void lineareFktToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new LinearFunktionForm();
@@ -46,10 +47,6 @@ namespace FunktionZeichnen
         {
             this.Close();
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+#endregion

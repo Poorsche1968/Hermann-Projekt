@@ -100,9 +100,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(235, 26);
+            this.label2.Size = new System.Drawing.Size(239, 26);
             this.label2.TabIndex = 6;
-            this.label2.Text = "BITTE GEBEN SIE ZAHLEN WERTE EIN\r\nUND TRENNEN SIE MIT KOMMAS TRENNEN";
+            this.label2.Text = "Hinweis: Wir bitten Sie Zahlen werte einzugeben.\r\nUND trennen Sie mit KOMMAS ";
             // 
             // GanzrationaleFunktionForm
             // 

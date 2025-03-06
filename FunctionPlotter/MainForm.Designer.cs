@@ -72,28 +72,28 @@
             // lineareFktToolStripMenuItem
             // 
             this.lineareFktToolStripMenuItem.Name = "lineareFktToolStripMenuItem";
-            this.lineareFktToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lineareFktToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.lineareFktToolStripMenuItem.Text = "Lineare Fkt.";
             this.lineareFktToolStripMenuItem.Click += new System.EventHandler(this.lineareFktToolStripMenuItem_Click);
             // 
             // qudratischeFktToolStripMenuItem
             // 
             this.qudratischeFktToolStripMenuItem.Name = "qudratischeFktToolStripMenuItem";
-            this.qudratischeFktToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.qudratischeFktToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.qudratischeFktToolStripMenuItem.Text = "Quadratische Fkt.";
             this.qudratischeFktToolStripMenuItem.Click += new System.EventHandler(this.qudratischeFktToolStripMenuItem_Click);
             // 
             // exponentialeFktToolStripMenuItem
             // 
             this.exponentialeFktToolStripMenuItem.Name = "exponentialeFktToolStripMenuItem";
-            this.exponentialeFktToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exponentialeFktToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.exponentialeFktToolStripMenuItem.Text = "Exponentiale Fkt.";
             this.exponentialeFktToolStripMenuItem.Click += new System.EventHandler(this.exponentialeFktToolStripMenuItem_Click);
             // 
             // ganzrationaleFktToolStripMenuItem
             // 
             this.ganzrationaleFktToolStripMenuItem.Name = "ganzrationaleFktToolStripMenuItem";
-            this.ganzrationaleFktToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ganzrationaleFktToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.ganzrationaleFktToolStripMenuItem.Text = "Ganzrationale Fkt.";
             this.ganzrationaleFktToolStripMenuItem.Click += new System.EventHandler(this.ganzrationaleFktToolStripMenuItem_Click);
             // 
@@ -108,7 +108,6 @@
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

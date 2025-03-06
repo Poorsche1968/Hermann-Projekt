@@ -97,7 +97,7 @@
             // 
             // buttonHilfe
             // 
-            this.buttonHilfe.Location = new System.Drawing.Point(480, 70);
+            this.buttonHilfe.Location = new System.Drawing.Point(513, 78);
             this.buttonHilfe.Name = "buttonHilfe";
             this.buttonHilfe.Size = new System.Drawing.Size(75, 23);
             this.buttonHilfe.TabIndex = 6;
@@ -108,7 +108,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(319, 60);
+            this.label1.Location = new System.Drawing.Point(282, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 7;
@@ -130,7 +130,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LinearFunktionForm";
             this.Text = "LinearFunktionForm";
-            this.Load += new System.EventHandler(this.LinearFunktionForm_Load);
+            //this.Load += new System.EventHandler(this.LinearFunktionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
