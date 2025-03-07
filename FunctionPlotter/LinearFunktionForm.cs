@@ -25,7 +25,7 @@ namespace FunktionZeichnen
             if (double.TryParse(textBoxNeigung.Text, out double steigung) && double.TryParse(textBoxAbfangen.Text, out double achsenabschnitt))
             {
                 var lineareFunktion = new LineareFunktion(steigung, achsenabschnitt);// Lineare Funktion erstellen
-                _koordinatensystem.SetFunktion(lineareFunktion);// Funktion setzen
+                _koordinatensystem.SetzeFunktion(lineareFunktion);// Funktion setzen
                 label1.Text = $"Funktion: y = {steigung}x + {achsenabschnitt}"; // Anzeige im Label
             }
             else

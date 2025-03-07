@@ -28,7 +28,7 @@ namespace FunktionZeichnen
             if (double.TryParse(textBoxA.Text, out double a) && double.TryParse(textBoxB.Text, out double b) && double.TryParse(textBoxC.Text, out double c))// Eingabe überprüfen
             {
                 var quadratischeFunktion = new QuadratischeFunktion(a, b, c);// Quadratische Funktion erstellen 
-                _graphPanel.SetFunktion(quadratischeFunktion);               // Funktion setzen
+                _graphPanel.SetzeFunktion(quadratischeFunktion);               // Funktion setzen
                 double[] wurzel = quadratischeFunktion.BerechneWurzeln();    // Nullstellen berechnen
 
                 string nachricht = $"Funktion gezeichnet: y = {a}x² + {b}x + {c}\n";// Nachricht zusammenstellen

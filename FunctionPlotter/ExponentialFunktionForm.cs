@@ -25,7 +25,7 @@ namespace FunktionZeichnen
             if (double.TryParse(textBoxBasis.Text, out double basisWert) && basisWert > 0)  // Prüfen, ob die Eingabe eine positive Zahl ist
             {
                 var expFunktion = new ExponentialFunktion(basisWert);                       // Exponentialfunktion erstellen
-                _koordinatensystem.SetFunktion(expFunktion);                               // Funktion dem Koordinatensystem hinzufügen
+                _koordinatensystem.SetzeFunktion(expFunktion);                               // Funktion dem Koordinatensystem hinzufügen
                 MessageBox.Show($"Funktion Zeichnen: y = {basisWert}^x");                 // Meldung anzeigen
                 label1.Text = $"Funktion: y = {basisWert}^x";                            // Funktion in Label anzeigen
             }

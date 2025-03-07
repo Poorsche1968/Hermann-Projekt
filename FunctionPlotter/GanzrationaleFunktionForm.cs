@@ -34,7 +34,7 @@ namespace FunktionZeichnen
 
                 // Ganzrationale Funktion erstellen
                 var ganzrationaleFunktion = new GanzrationaleFunktion(koeffizienten);   // Ganzrationale Funktion erstellen
-                _koordinatensystem.SetFunktion(ganzrationaleFunktion);                         // Funktion im GraphPanel setzen
+                _koordinatensystem.SetzeFunktion(ganzrationaleFunktion);                         // Funktion im GraphPanel setzen
 
                 // Nachricht mit der gezeichneten Funktion anzeigen
                 MessageBox.Show($"Funktion gezeichnet: y = {string.Join(" + ", koeffizienten.Select((c, i) => $"{c}x^{koeffizienten.Length - 1 - i}"))}"); // Anzeige der Funktion
