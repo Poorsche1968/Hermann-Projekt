@@ -5,7 +5,7 @@ namespace FunktionZeichnen
 {
     public partial class LinearFunktionForm : Form
     {
-        private Koordinatensystem _graphPanel;
+        private Koordinatensystem _koordinatensystem;
 
         #region Initialisierung der Form
         public LinearFunktionForm()
@@ -14,8 +14,8 @@ namespace FunktionZeichnen
             Text = "Lineare Funktion";// Titel der Form
 
 
-            _graphPanel = new Koordinatensystem() { Top = 150, Left = 20, Width = 800, Height = 600 };// GraphPanel erstellen
-            Controls.Add(_graphPanel);// GraphPanel hinzufügen
+            _koordinatensystem = new Koordinatensystem() { Top = 150, Left = 20, Width = 800, Height = 600 };// GraphPanel erstellen
+            Controls.Add(_koordinatensystem);// GraphPanel hinzufügen
         }
         #endregion
 
@@ -25,7 +25,7 @@ namespace FunktionZeichnen
             if (double.TryParse(textBoxNeigung.Text, out double steigung) && double.TryParse(textBoxAbfangen.Text, out double achsenabschnitt))
             {
                 var lineareFunktion = new LineareFunktion(steigung, achsenabschnitt);// Lineare Funktion erstellen
-                _graphPanel.SetFunktion(lineareFunktion);// Funktion setzen
+                _koordinatensystem.SetFunktion(lineareFunktion);// Funktion setzen
                 label1.Text = $"Funktion: y = {steigung}x + {achsenabschnitt}"; // Anzeige im Label
             }
             else
