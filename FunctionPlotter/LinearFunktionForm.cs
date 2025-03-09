@@ -35,16 +35,18 @@ namespace FunktionZeichnen
         }
         #endregion
 
-        //Form schließen
+        #region Form schließen
         private void buttonBeenden_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        
-        //Hilfe anzeigen
+        #endregion
+
+        #region Hilfe anzeigen
         private void buttonHilfe_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Eine lineare Funktion hat die Form f(x) = m*x + b , wobei m die Steigung und b der y-Achsenabschnitt ist; Sie beschreibt eine gerade Linie mit konstanter Steigung.");
         }
+        #endregion
     }
 }
