@@ -2,32 +2,34 @@
 
 namespace FunktionZeichnen
 {
-    // Die Klasse der Exponentiel Funktion wird erstellt und wird vererbt mit der Grund Funktion
+    //Die Klasse der Exponentiel Funktion wird erstellt und wird vererbt mit der Grund Funktion
     public class ExponentialFunktion : Funktion 
     {
-        // Automatisch implementierte Eigenschaft zur Speicherung der Basis der Exponentialfunktion
-        public double Basis { get; set; }
+        #region Automatisch implementierte Eigenschaften
+        //Automatisch implementierte Eigenschaft zur Speicherung der Basis der Exponentialfunktion
+        public double a { get; set; }
+        #endregion
 
-
-        // Konstruktor der Klasse zur Darstellung einer Exponentialfunktion
-        public ExponentialFunktion(double BasisGröße)
+        #region Konstruktor
+        //Konstruktor der Klasse zur Darstellung einer Exponentialfunktion
+        public ExponentialFunktion(double a_Größe)
         {
-            Basis = BasisGröße; // Setzt die Basis der Exponentialfunktion
-        }
-
-        #region Methoden
-        // Methode zur Berechnung des Funktionswertes für ein gegebenes x
-        public override double Berechne(double x)
-        {
-            return Math.Pow(Basis, x); // Berechnet Base^x
-        }
-
-        // Methode zur Rückgabe des Funktionsnamens
-        public override string AuswhalFunktionsTyp()
-        {
-            return "Exponential Funktion"; // Gibt den Funktionsname der Funktion zurück
+            a = a_Größe; //Setzt die Basis der Exponentialfunktion
         }
         #endregion
 
+        #region Methoden
+        //Methode zur Berechnung des Funktionswertes für ein gegebenes x
+        public override double Berechne(double x)
+        {
+            return Math.Pow(a, x); //Berechnet a^x
+        }
+
+        //Methode zur Rückgabe des Funktionsnamens
+        public override string AuswhalFunktionsTyp()
+        {
+            return "Exponential Funktion"; //Gibt den Funktionsname der Funktion zurück
+        }
+        #endregion
     }
 }
