@@ -76,7 +76,7 @@
             // 
             // buttonZeichnen
             // 
-            this.buttonZeichnen.Location = new System.Drawing.Point(22, 118);
+            this.buttonZeichnen.Location = new System.Drawing.Point(143, 113);
             this.buttonZeichnen.Margin = new System.Windows.Forms.Padding(2);
             this.buttonZeichnen.Name = "buttonZeichnen";
             this.buttonZeichnen.Size = new System.Drawing.Size(56, 19);
@@ -108,7 +108,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(282, 55);
+            this.label1.Location = new System.Drawing.Point(241, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 7;
