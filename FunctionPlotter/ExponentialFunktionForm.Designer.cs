@@ -48,7 +48,7 @@
             // 
             // textBoxBasis
             // 
-            this.textBoxBasis.Location = new System.Drawing.Point(92, 21);
+            this.textBoxBasis.Location = new System.Drawing.Point(92, 18);
             this.textBoxBasis.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxBasis.Name = "textBoxBasis";
             this.textBoxBasis.Size = new System.Drawing.Size(81, 20);
@@ -88,7 +88,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(280, 27);
+            this.label1.Location = new System.Drawing.Point(89, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 6;

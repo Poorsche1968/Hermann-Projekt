@@ -5,17 +5,29 @@ namespace FunktionZeichnen
 {
     public partial class ExponentialFunktionForm : Form
     {
+        #region Exponential Funktion Formular
+        //Erstellt eine Instanz (objekt) der Klasse "Koordinatensystem", um die Funktion zu zeichnen.
         private Koordinatensystem _koordinatensystem;
 
-        #region Exponential Funktion Formular
+        //Konstruktor für das Formular
         public ExponentialFunktionForm()
         {
-            InitializeComponent();
-            Text = "ExponentialFunktion";
+            InitializeComponent();//Startet das Formular
 
-            // Koordinatensystem hinzufügen
-            _koordinatensystem = new Koordinatensystem() { Top = 100, Left = 20, Width = 800, Height = 600 }; // Position und Größe des Koordinatensystems
-            Controls.Add(_koordinatensystem); // Koordinatensystem dem Formular hinzufügen
+            Text = "ExponentialFunktion";//Legt den Titel des Fensters fest
+
+
+            //Erstellt ein neues Koordinatensystem und legt seine Position und Größe fest
+            _koordinatensystem = new Koordinatensystem()
+            {
+                Top = 100,    //Abstand von der oberen Kante des Formulars
+                Left = 20,    //Abstand von der linken Kante des Formulars
+                Width = 800,  //Breite des Koordinatensystems
+                Height = 600  //Höhe des Koordinatensystems
+            };
+
+            //Fügt das Koordinatensystem dem Formular hinzu, sodass es angezeigt wird
+            Controls.Add(_koordinatensystem);
         }
         #endregion
 
@@ -36,17 +48,19 @@ namespace FunktionZeichnen
         }
         #endregion
 
-        // Form schließen
+        #region Formblatt schließen
         private void buttonBeenden_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        #endregion
 
-        // Hilfe anzeigen
+        #region Hilfeanzeige
         private void buttonHilfe_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Eine Exponentialfunktion hat die Form f(x) = a^x , wobei a eine positive Konstante ist; Sie beschreibt eine Kurve, die exponentiell wächst oder fällt.");
         }
+        #endregion
     }
 }
 
