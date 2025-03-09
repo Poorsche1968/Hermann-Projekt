@@ -12,7 +12,7 @@ namespace FunktionZeichnen
         public GanzrationaleFunktionForm()
         {
             InitializeComponent();//Startet das Formular
-            Text = "Ganzrationale Funktion";// Titel des Fensters setzen
+            Text = "Ganzrationale Funktion";//Titel des Fensters setzen
 
             //Erstellt ein neues Koordinatensystem und legt seine Position und Größe fest
             _koordinatensystem = new Koordinatensystem()
