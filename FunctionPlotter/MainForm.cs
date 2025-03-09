@@ -7,7 +7,7 @@ namespace FunktionZeichnen
     {
         public MainForm()
         {
-            InitializeComponent();
+            InitializeComponent(); //Startet das Formular
         }
         #region Formulare anzeigen und beenden 
         private void lineareFktToolStripMenuItem_Click(object sender, EventArgs e)
