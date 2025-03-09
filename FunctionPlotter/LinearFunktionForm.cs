@@ -5,9 +5,9 @@ namespace FunktionZeichnen
 {
     public partial class LinearFunktionForm : Form
     {
+        #region Lineare Funktion Formular 
         private Koordinatensystem _koordinatensystem;
-
-        #region Initialisierung der Form
+        
         public LinearFunktionForm()
         {
             InitializeComponent();
@@ -19,7 +19,7 @@ namespace FunktionZeichnen
         }
         #endregion
 
-        #region GraphPanel zeichnen lassen
+        #region Funktion Zeichnen
         private void buttonZeichnen_Click(object sender, EventArgs e)
         {
             if (double.TryParse(textBoxNeigung.Text, out double steigung) && double.TryParse(textBoxAbfangen.Text, out double achsenabschnitt))
