@@ -5,7 +5,7 @@ namespace FunktionZeichnen
 {
     public partial class QuadratischeFunktionForm : Form
     {
-        #region Quadratische Funktion Formular
+        #region Quadratische Funktions Formular
 
         private Koordinatensystem _koordinatensystem;// Panel zur Darstellung des Graphen
         
