@@ -29,7 +29,7 @@ namespace FunktionZeichnen
         }
 
         // Methode zur Rückgabe des Funktionstyps als String
-        public override string GetFunktionsTyp()
+        public override string AuswhalFunktionsTyp()
         {
             return "Ganzrationale Funktion";// Deutsche Bezeichnung für die Funktion
         }

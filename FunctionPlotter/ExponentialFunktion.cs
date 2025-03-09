@@ -1,30 +1,29 @@
-﻿using FunktionZeichnen;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using System;
 
 namespace FunktionZeichnen
 {
-    public class ExponentialFunktion : Funktion
+    // Die Klasse der Exponentiel Funktion wird erstellt und wird vererbt mit der Grund Funktion
+    public class ExponentialFunktion : Funktion 
     {
-        public double Base { get; set; }
+        // Eigenschaft zur Speicherung der Basis der Exponentialfunktion
+        public double Basis { get; set; }
 
-        public ExponentialFunktion(double baseValue)
+        // Klasse zur Darstellung einer Exponentialfunktion
+        public ExponentialFunktion(double BasisGröße)
         {
-            Base = baseValue;
+            Basis = BasisGröße; // Setzt die Basis der Exponentialfunktion
         }
 
+        // Methode zur Berechnung des Funktionswertes für ein gegebenes x
         public override double Berechne(double x)
         {
-            return Math.Pow(Base, x);
+            return Math.Pow(Basis, x); // Berechnet Base^x
         }
-  
-        public override string GetFunktionsTyp()
+
+        // Methode zur Rückgabe des Funktionsnamens
+        public override string AuswhalFunktionsTyp()
         {
-            return "Exponential Function";
+            return "Exponential Funktion"; // Gibt den Funktionsname der Funktion zurück
         }
     }
 }
-

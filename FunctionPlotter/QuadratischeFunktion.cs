@@ -28,7 +28,7 @@ namespace FunktionZeichnen
         }
 
         // Methode zur Rückgabe des Funktionstyps als String
-        public override string GetFunktionsTyp()
+        public override string AuswhalFunktionsTyp()
         {
             return "Quadratic Function";// Gibt den Namen des Funktionstyps zurück
         }

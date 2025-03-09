@@ -12,7 +12,7 @@ namespace FunktionZeichnen
         public abstract double Berechne(double x);
 
         // Methode zur Rückgabe des Funktionstyps als String (kann in Unterklassen überschrieben werden)
-        public virtual string GetFunktionsTyp()
+        public virtual string AuswhalFunktionsTyp()
         {
             return "Basisfunktion";//Gibt den die Basis Funktion zurück
         }

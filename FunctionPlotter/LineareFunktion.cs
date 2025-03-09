@@ -21,7 +21,7 @@ namespace FunktionZeichnen
             return Neigung * x + Abfangen;
         }
 
-        public override string GetFunktionsTyp()
+        public override string AuswhalFunktionsTyp()
         {
             return "Lineare Funktion";
         }
