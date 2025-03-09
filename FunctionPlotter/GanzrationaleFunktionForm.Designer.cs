@@ -40,7 +40,7 @@
             // labelKoeffizienten
             // 
             this.labelKoeffizienten.AutoSize = true;
-            this.labelKoeffizienten.Location = new System.Drawing.Point(8, 9);
+            this.labelKoeffizienten.Location = new System.Drawing.Point(11, 9);
             this.labelKoeffizienten.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelKoeffizienten.Name = "labelKoeffizienten";
             this.labelKoeffizienten.Size = new System.Drawing.Size(135, 13);
@@ -60,7 +60,7 @@
             // 
             // textBoxKoeffizienten
             // 
-            this.textBoxKoeffizienten.Location = new System.Drawing.Point(191, 6);
+            this.textBoxKoeffizienten.Location = new System.Drawing.Point(165, 6);
             this.textBoxKoeffizienten.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxKoeffizienten.Name = "textBoxKoeffizienten";
             this.textBoxKoeffizienten.Size = new System.Drawing.Size(106, 20);
@@ -100,9 +100,10 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(239, 26);
+            this.label2.Size = new System.Drawing.Size(263, 26);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Hinweis: Wir bitten Sie Zahlen werte einzugeben.\r\nUND trennen Sie mit KOMMAS ";
+            this.label2.Text = "Hinweis: Wir bitten Sie Zahlen Werte einzugeben.\r\nUND trennen Sie diese mit einem" +
+    " KOMMA: 1, 2, 3, 4...";
             // 
             // GanzrationaleFunktionForm
             // 
