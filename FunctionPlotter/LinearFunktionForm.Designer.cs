@@ -41,17 +41,17 @@
             // labelNeigung
             // 
             this.labelNeigung.AutoSize = true;
-            this.labelNeigung.Location = new System.Drawing.Point(19, 27);
+            this.labelNeigung.Location = new System.Drawing.Point(64, 30);
             this.labelNeigung.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNeigung.Name = "labelNeigung";
-            this.labelNeigung.Size = new System.Drawing.Size(75, 13);
+            this.labelNeigung.Size = new System.Drawing.Size(66, 13);
             this.labelNeigung.TabIndex = 0;
-            this.labelNeigung.Text = "Steigung (m*x)";
+            this.labelNeigung.Text = "Steigung (m)";
             // 
             // labelAbfangen
             // 
             this.labelAbfangen.AutoSize = true;
-            this.labelAbfangen.Location = new System.Drawing.Point(19, 87);
+            this.labelAbfangen.Location = new System.Drawing.Point(19, 78);
             this.labelAbfangen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAbfangen.Name = "labelAbfangen";
             this.labelAbfangen.Size = new System.Drawing.Size(111, 13);
@@ -60,7 +60,7 @@
             // 
             // textBoxNeigung
             // 
-            this.textBoxNeigung.Location = new System.Drawing.Point(150, 20);
+            this.textBoxNeigung.Location = new System.Drawing.Point(134, 27);
             this.textBoxNeigung.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNeigung.Name = "textBoxNeigung";
             this.textBoxNeigung.Size = new System.Drawing.Size(76, 20);
@@ -68,7 +68,7 @@
             // 
             // textBoxAbfangen
             // 
-            this.textBoxAbfangen.Location = new System.Drawing.Point(150, 80);
+            this.textBoxAbfangen.Location = new System.Drawing.Point(134, 75);
             this.textBoxAbfangen.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxAbfangen.Name = "textBoxAbfangen";
             this.textBoxAbfangen.Size = new System.Drawing.Size(76, 20);
@@ -110,9 +110,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(282, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
+            this.label1.Text = "Ausgabe Funktion:";
             // 
             // LinearFunktionForm
             // 
@@ -130,7 +130,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LinearFunktionForm";
             this.Text = "LinearFunktionForm";
-            //this.Load += new System.EventHandler(this.LinearFunktionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
