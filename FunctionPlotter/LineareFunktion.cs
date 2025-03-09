@@ -1,24 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace FunktionZeichnen
+﻿namespace FunktionZeichnen
 {
     public class LineareFunktion : Funktion
     {
-        public double Neigung { get; set; }
-        public double Abfangen { get; set; }
+        public double m { get; set; }
+        public double b { get; set; }
 
-        public LineareFunktion(double neigung, double abfangen)
+        public LineareFunktion(double steigung, double schnittpunkt_y_achse)
         {
-            Neigung = neigung;
-            Abfangen = abfangen;
+            m = steigung;
+            b = schnittpunkt_y_achse;
         }
 
         public override double Berechne(double x)
         {
-            return Neigung * x + Abfangen;
+            return m * x + b;
         }
 
         public override string AuswhalFunktionsTyp()
