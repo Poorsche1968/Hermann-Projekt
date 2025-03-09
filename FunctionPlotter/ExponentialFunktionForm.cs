@@ -34,12 +34,16 @@ namespace FunktionZeichnen
         #region Funktion Zeichnen
         private void buttonZeichne_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(textBoxBasis.Text, out double basisWert) && basisWert > 0)  // Prüfen, ob die Eingabe eine positive Zahl ist
+            // Prüfen, ob die Eingabe eine positive Zahl ist
+            if (double.TryParse(textBoxBasis.Text, out double basisWert) && basisWert > 0)  
             {
-                var expFunktion = new ExponentialFunktion(basisWert);                       // Exponentialfunktion erstellen
-                _koordinatensystem.SetzeFunktion(expFunktion);                               // Funktion dem Koordinatensystem hinzufügen
-                MessageBox.Show($"Funktion Zeichnen: y = {basisWert}^x");                 // Meldung anzeigen
-                label1.Text = $"Funktion: y = {basisWert}^x";                            // Funktion in Label anzeigen
+                var expFunktion = new ExponentialFunktion(basisWert);//Exponentialfunktion erstellen
+
+                _koordinatensystem.SetzeFunktion(expFunktion);//Funktion dem Koordinatensystem hinzufügen
+                
+                MessageBox.Show($"Funktion Zeichnen: y = {basisWert}^x");//Meldung anzeigen
+                
+                label1.Text = $"Funktion: y = {basisWert}^x";//Funktion in Label anzeigen                           
             }
             else
             {
