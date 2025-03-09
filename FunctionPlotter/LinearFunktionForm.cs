@@ -14,8 +14,17 @@ namespace FunktionZeichnen
             Text = "Lineare Funktion";// Titel der Form
 
 
-            _koordinatensystem = new Koordinatensystem() { Top = 150, Left = 20, Width = 800, Height = 600 };// GraphPanel erstellen
-            Controls.Add(_koordinatensystem);// GraphPanel hinzufügen
+            //Erstellt ein neues Koordinatensystem und legt seine Position und Größe fest
+            _koordinatensystem = new Koordinatensystem()
+            {
+                Top = 150,    //Abstand von der oberen Kante des Formulars
+                Left = 20,    //Abstand von der linken Kante des Formulars
+                Width = 800,  //Breite des Koordinatensystems
+                Height = 600  //Höhe des Koordinatensystems
+            };
+
+            //Fügt das Koordinatensystem dem Formular hinzu, sodass es angezeigt wird
+            Controls.Add(_koordinatensystem);
         }
         #endregion
 
